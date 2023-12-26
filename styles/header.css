@@ -1,0 +1,116 @@
+.header{
+position: fixed;
+justify-content: space-between;
+height: 80px;
+width: 100%;
+top: 0;
+left: 0;
+right: 0;
+z-index: 100px;
+background-color: white;
+border-bottom:solid 1px rgb(204, 204, 204);
+}
+@media ( max-width:870px)  {
+  .title{
+  font-size: 28px;
+  }
+ .icon-of-title{
+  font-size: 35px;
+ }
+ }
+ @media ( max-width:871px) and (min-width:999px){
+  .title{
+   font-size: 28px;
+  }
+  .icon-of-title{
+    font-size: 35px;
+  }
+ }
+ @media ( min-width:1000px)  {
+ .title{
+  font-size: 40px;
+ }
+ .icon-of-title{
+  font-size: 43px;
+ }
+  
+   }
+   
+.left-section,
+.right-section,
+.header
+{
+display: flex;
+flex-direction: row;
+align-items: center;
+}
+.title{
+  display: inline;
+ 
+  margin:30px;
+  margin-right: 3px;
+  }
+.title,
+.icon-of-title{
+  text-shadow: 7px 7px 7px rgba(234, 234, 234, 0.413);font-weight: bold;
+}
+.right-section{
+  width: 20%; 
+  justify-content:space-between;
+  margin-right: 38px;
+}
+.icons{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  height:80px ;
+  cursor: pointer;
+}@media ( max-width:870px)  {
+
+  .icons {
+      padding: 0;
+    }
+  }
+  @media ( max-width:871px) and (min-width:999px){
+    .icons{
+      padding: 0 10px;
+    }
+  }
+  @media ( min-width:1000px)  {
+  
+    .icons {
+       padding: 0 20px;
+      }
+    }
+    
+.icon{
+  font-size: 26px;
+  color: black;
+}
+    
+.icons .icon-title{
+  font-family: roboto, arial;
+  font-size: 13px;
+  position: absolute;
+  background-color: gray;
+  color: white;
+  padding:6px 8px 6px 8px;
+  bottom: -25px;
+  pointer-events: none;
+  opacity: 0;
+  white-space: nowrap;
+ 
+}
+.icons:hover .icon-title{
+opacity: 1; 
+transition: 0.5s;
+}
+.icons:focus{
+  background-color: rgba(230, 236, 240, 0.594);
+}
+.icon-lien{
+  text-decoration-line: none;
+}
+
+

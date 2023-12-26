@@ -1,0 +1,51 @@
+.section{
+  margin-top: 80px;
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+  top:0;
+  left:0;
+  bottom:0;
+  border-right:solid 1px rgb(255, 255, 255); 
+}
+@media ( max-width:870px)  {
+  .section{
+    width: 15rem;
+  }
+ }
+ @media ( max-width:871px) and (min-width:999px){
+   .section{
+    width: 17rem;
+ }
+ }
+ @media ( min-width:1000px)  {
+   .section{
+    width: 24rem;
+   } 
+ }
+ .list-of-pomodoro{
+  height: 10rem;
+  padding-top: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-style: italic;
+  font-size: 14px;color: #797979 ;
+  border-bottom:solid 1px rgb(215, 214, 214);
+}
+.element .todo-time,
+.element .todo-title{
+  font-family:  Roboto;
+  font-style:normal;
+  font-size: 17px;
+  padding: 2px 0 10px 19px;
+  color: black;
+} 
+.list-of-pomodoro .control-pomodoro-button{
+  background-color:rgb(26,115,232) ;
+  color: white;
+  border: none;
+  padding: 9px 0;
+  margin:0 50px 5px  ;
+  border-radius: 20px;
+}
