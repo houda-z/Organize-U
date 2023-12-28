@@ -2,7 +2,6 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   background-color: white;
-  margin-top: 14px;
 }
 .todo-1,
 .todo-2,
@@ -10,7 +9,7 @@
 .todo-4
 {
   position: relative;
-  height: 15rem;
+  height: 17rem;
 }
 .todo-1,
 .todo-3{
@@ -43,11 +42,9 @@ border-top: solid rgba(230, 236, 240, 0.594) ;
 .add-button{
   background-color:rgb(26,115,232);
   color: white; 
-  font-size:20px;
   font-weight: bold;
   border: none; 
-  width: 40px;
-  height: 40px;
+ padding: 8px 25px;
   border-radius: 100px;
   cursor: pointer; 
   margin-left: -11px;

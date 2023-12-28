@@ -8,30 +8,20 @@ left: 0;
 right: 0;
 z-index: 100px;
 background-color: white;
-border-bottom:solid 1px rgb(204, 204, 204);
 }
 @media ( max-width:870px)  {
   .title{
   font-size: 28px;
   }
- .icon-of-title{
-  font-size: 35px;
- }
  }
  @media ( max-width:871px) and (min-width:999px){
   .title{
    font-size: 28px;
   }
-  .icon-of-title{
-    font-size: 35px;
-  }
  }
  @media ( min-width:1000px)  {
  .title{
   font-size: 40px;
- }
- .icon-of-title{
-  font-size: 43px;
  }
   
    }
@@ -46,14 +36,14 @@ align-items: center;
 }
 .title{
   display: inline;
- 
+  font-family:arial; 
+  
+  color: rgb(60,64,67);
+  /*text-shadow: 7px 7px 7px rgba(234, 234, 234, 0.413);*/
+  display: inline-block;
   margin:30px;
   margin-right: 3px;
   }
-.title,
-.icon-of-title{
-  text-shadow: 7px 7px 7px rgba(234, 234, 234, 0.413);font-weight: bold;
-}
 .right-section{
   width: 20%; 
   justify-content:space-between;
@@ -61,6 +51,7 @@ align-items: center;
 }
 .icons{
   position: relative;
+  color:#999 ;
   display: flex;
   justify-content: center;
   align-items:center;
@@ -86,14 +77,15 @@ align-items: center;
     
 .icon{
   font-size: 26px;
-  color: black;
+  color:rgb(60,64,67);
+
 }
     
 .icons .icon-title{
   font-family: roboto, arial;
   font-size: 13px;
   position: absolute;
-  background-color: gray;
+  background-color: rgb(132, 174, 232);
   color: white;
   padding:6px 8px 6px 8px;
   bottom: -25px;
