@@ -1,24 +1,20 @@
 .header{
 display: flex;
-flex-direction: row;
-justify-content: space-between;
 align-items: center;
-position: fixed;
-height: 85px;
+justify-content: space-between;
+position: relative;
+height: 80px;
+margin-bottom: 30px;
 width: 100%;
-top: 0;
-left: 0;
-right: 0;
-z-index: 100px;
-border-bottom: none 3px;
-box-shadow: 0px 2px 3px rgba(224, 237, 245, 0.594);
+
+background-color: transparent;
+/*border-bottom: none 3px;
+box-shadow: 0px 2px 3px rgba(211, 220, 225, 0.594);*/
 }
 .logo-title{
-margin: 20px;
-width: 300px;
+width: auto;
 display: flex;
 flex-direction: row;
-align-items: center;
 cursor: pointer;
 }
 .logo{
@@ -28,9 +24,10 @@ cursor: pointer;
   font-size: 28px;
   display: inline;
   font-family:roboto, arial; 
-  color:#01568b ;
+  color: black;
   display: inline-block;
   margin-left:10px;
+  
 }
 @media ( max-width:870px)  {
   .title-page{
@@ -44,18 +41,76 @@ cursor: pointer;
  }
  @media ( min-width:1000px)  {
  .title-page{
-  font-size: 30px;
+  font-size: 28px;
  }
  .logo{
-  width: 48px;
+  width: 43px;
  }
    }
-.menu-icon-container{
-margin: 20px;
-display: inline;
-width: auto;
-cursor: pointer;
+.add-todo-button svg path{
+  stroke: rgb(0, 0, 0);
+  fill: rgb(0, 0, 0);
 }
-.menu-icon{
-  font-size: 25px;
+.menu-icon-container{
+cursor: pointer;
+margin-right: 15px;
+}
+.menu-icon-container:hover{
+/*background-color: rgb(228, 237, 243);*/
+opacity: 0.7;
+transition: 1s;
+}
+.add-todo-button{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 10px;
+  width: 90px;
+  background-color: rgb(219, 219, 219);
+  border-radius: 20px;
+  cursor: pointer;
+  border: none;
+}
+.creat-button{
+  font-family: roboto;
+  color:rgb(0, 0, 0);
+  font-size: 15px ;
+}
+.add-todo-button:hover{
+  transition: 0.5s;
+  box-shadow: 2px 2px 5px rgb(121, 121, 121);
+}
+.add-todo-button:active{
+  opacity: 0.7;
+}
+.new-task-container{
+  margin-left: 20px;
+}
+.menu-icon,
+.new-task-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu-icon-container .icon-title,
+.new-task-container .task-icon-title {
+  font-family: roboto, arial;
+  font-size: 14px;
+  position: absolute;
+  background-color: rgb(121, 121, 121);
+  color: white;
+  border:none;
+  border-radius: 3px;
+  padding:6px 8px 6px 8px;
+  bottom: -20px;
+  pointer-events: none;
+  opacity: 0;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+.menu-icon-container:hover .icon-title,
+.new-task-container:hover .task-icon-title{
+  opacity: 1; 
+  transition: 0.5s;
 }
