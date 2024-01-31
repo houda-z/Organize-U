@@ -1,44 +1,117 @@
-
-.menu-icon-container{
-  margin: 10px;
-  padding: 10px;
-  cursor: pointer;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	position: relative;
+	height: 85px;
+	width: 100%;
+	margin-bottom: 30px;
+	background-color: transparent;
+}
+.logo-title-container {
+	width: auto;
+	display: flex;
+	flex-direction: row;
+	cursor: pointer;
+}
+.logo {
+  width: 40px;
+}
+.page-name{
+	font-size: 28px;
+	display: inline;
+	font-family:roboto, arial; 
+	color: black;
+	display: inline-block;
+	margin-left:10px;
+}
+@media ( max-width:870px) {
+	.page-name{
+	  font-size: 25px;
+	}
+}
+@media ( min-width:871px) and (max-width:999px) {
+	.page-name{
+		font-size: 25px;
+	}
+}
+ @media ( min-width:1000px) {
+  .page-name{
+    font-size: 28px;
   }
-  .menu-icon-container:hover{
-  background-color: rgb(235, 236, 238);
+  .logo{
+    width: 43px;
   }
-  .menu-icon{
-    font-size: 25px;
-    color: #000000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .menu-icon-container .icon-title{
-    font-family: roboto, arial;
-    font-size: 15px;
-    position: absolute;
-    background-color: rgb(121, 121, 121);
-    color: white;
-    border:none;
-    border-radius: 3px;
-    padding:6px 8px 6px 8px;
-    bottom: -17px;
-    pointer-events: none;
-    opacity: 0;
-    white-space: nowrap;
-    vertical-align: middle;
-  }
-  .menu-icon-container:hover .icon-title{
-    opacity: 1; 
-    transition: 0.5s;
-  }
-  .header{
-    float: right;
-  }
+}
+.add-todo-button svg path {
+	stroke: rgb(0, 0, 0);
+	fill: rgb(0, 0, 0);
+}
+.menu-icon-container {
+	height: 48px;
+	width: 48px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	margin-right: 15px;
+}
+.menu-icon-container:hover {
+	background-color: rgb(228, 228, 228);
+	transition: 0.5s;
+}
+.creat-button {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	padding: 8px 10px;
+	width: 90px;
+	background-color: rgb(219, 219, 219);
+	border-radius: 20px;
+	cursor: pointer;
+	border: none;
+}
+.creat-button-name {
+	font-family: roboto;
+	color:rgb(0, 0, 0);
+	font-size: 15px ;
+}
+.creat-button:hover {
+	transition: 0.5s;
+	box-shadow: 2px 2px 5px rgb(147, 147, 147);
+}
+.creat-button:active {
+  opacity: 0.7;
+}
+.creat-button-container {
+  margin-left: 20px;
+}
+.menu-icon,
+.creat-button-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.menu-icon-container .menu-icon-title,
+.creat-button-container .creat-button-title {
+	font-family: roboto, arial;
+	font-size: 14px;
+	position: absolute;
+	background-color: rgb(121, 121, 121);
+	color: white;
+	border:none;
+	border-radius: 3px;
+	padding:6px 8px 6px 8px;
+	bottom: -20px;
+	pointer-events: none;
+	opacity: 0;
+	white-space: nowrap;
+	vertical-align: middle;
+}
+.menu-icon-container:hover .menu-icon-title,
+.creat-button-container:hover .creat-button-title {
+	opacity: 1; 
+	transition: 0.5s;
+}

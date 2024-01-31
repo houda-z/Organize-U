@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Organize U</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;0,700;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/generat.css">
+ </head>
+ <body>
+ <section class="section">
+  <div class="add-task-container">
+   <button class="close-button">
+   <i data-visualcompletion="css-img" class="x1b0d499 x1d69dk1" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yY/r/fCbUcoRfiez.png&quot;); background-position: 0px -468px; background-size: 26px 994px; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block;"></i>
+   </button>
+   <input id="todo-name" placeholder="Title" type="text">
+   <div class="date-hour">
+   <span class="material-symbols-outlined day-icon">
+     today
+   </span>
+   <div>date/hour</div>
+   </div>
+   <button class="save-button">Save</button>
+  </div>
+ </section> 
+ <header class="header">
+  <div class="creat-button-container">
+    <button class="creat-button">
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon-md"><path fill-rule="evenodd" clip-rule="evenodd" fill="currentColor" d="M16.7929 2.79289C18.0118 1.57394 19.9882 1.57394 21.2071 2.79289C22.4261 4.01184 22.4261 5.98815 21.2071 7.20711L12.7071 15.7071C12.5196 15.8946 12.2652 16 12 16H9C8.44772 16 8 15.5523 8 15V12C8 11.7348 8.10536 11.4804 8.29289 11.2929L16.7929 2.79289ZM19.7929 4.20711C19.355 3.7692 18.645 3.7692 18.2071 4.2071L10 12.4142V14H11.5858L19.7929 5.79289C20.2308 5.35499 20.2308 4.64501 19.7929 4.20711ZM6 5C5.44772 5 5 5.44771 5 6V18C5 18.5523 5.44772 19 6 19H18C18.5523 19 19 18.5523 19 18V14C19 13.4477 19.4477 13 20 13C20.5523 13 21 13.4477 21 14V18C21 19.6569 19.6569 21 18 21H6C4.34315 21 3 19.6569 3 18V6C3 4.34314 4.34315 3 6 3H10C10.5523 3  11 3.44771 11 4C11 4.55228 10.5523 5 10 5H6Z"></path></svg>
+    <div class="creat-button-name">Creat</div>
+    </button>
+    <div class="creat-button-title">New Task</div>
+  </div>
+  <div class="logo-title-container">
+    <img src="logo/Untitled.png" class="logo">
+    <div class="page-name">Organize U</div>
+  </div>
+  <div class="menu-icon-container">
+    <div class="menu-icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+    <line x1="1" y1="12" x2="21" y2="12"></line>
+    <line x1="1" y1="6" x2="21" y2="6"></line>
+    <line x1="1" y1="18" x2="21" y2="18"></line>
+    </svg>    
+    <div class="menu-icon-title">Menu</div>
+    </div>
+  </div>
+ </header>
+ <main class="main">
+  <section class="todo-grid">
+    <div class="do-first-tasks" id="do-first-tasks">
+     <div class="name-dot">
+      <div class="dot"></div>
+      <div>Do First</div>
+     </div>
+     <div class="task-container"> 
+      <div class="task-title"> take a javaScript cours </div>
+      <div class="check-task"></div>
+     </div>
+    </div>
+    <div class="schedule-tasks" id="schedule-tasks">
+     <div class="name-dot">
+      <div class="dot"></div>
+      <div>Schedule</div>
+     </div>
+     <div class="task-container"> 
+      <div class="task-title"> take a javaScript cours </div>
+      <div class="check-task"></div>
+     </div>
+    </div>
+    <div class="delegate-tasks" id="delegate-tasks">
+     <div class="name-dot">
+      <div class="dot"></div>
+      <div>Delegate</div>
+     </div>
+     <div class="task-container"> 
+      <div class="task-title"> take a javaScript cours </div>
+      <div class="check-task"></div>
+     </div>
+    </div>
+    <div class="eliminate-tasks" id="eliminate-tasks">
+     <div class="name-dot">
+      <div class="dot"></div>
+      <div>Eliminate</div>
+     </div>
+     <div class="task-container"> 
+      <div class="task-title"> take a javaScript cours </div>
+      <div class="check-task"></div>
+     </div>
+    </div>
+  </section>
+ </main>
+</body>
+</html>
