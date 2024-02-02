@@ -43,16 +43,16 @@
 	flex: 1;
 	color: black;
 }
-#do-first-tasks .check-task {
+#do-first-tasks #check-task {
   border-color: green;
 }
-#schedule-tasks .check-task {
+#schedule-tasks #check-task {
   border-color: blue;
 }
-#delegate-tasks .check-task {
+#delegate-tasks #check-task {
   border-color: orange;
 }
-#eliminate-tasks .check-task {
+#eliminate-tasks #check-task {
   border-color: red;
 }
 .check-task {
@@ -64,31 +64,31 @@
 	margin-left: 10px;
 	cursor: pointer;
 }
-#do-first-tasks .dot {
+#do-first-tasks #dot {
   background-color: green;
 }
-#schedule-tasks .dot {
+#schedule-tasks #dot {
   background-color: blue;
 }
-#delegate-tasks .dot {
+#delegate-tasks #dot {
   background-color: orange;
 }
-#eliminate-tasks .dot {
+#eliminate-tasks #dot {
   background-color: red;
 }
-#do-first-tasks .name-dot {
+#do-first-tasks #name {
   color: green;
 }
-#schedule-tasks .name-dot {
+#schedule-tasks #name {
   color: blue;
 }
-#delegate-tasks .name-dot {
+#delegate-tasks #name {
   color: orange;
 }
-#eliminate-tasks .name-dot {
+#eliminate-tasks #name {
   color: red;
 }
-.dot {
+#dot {
 	height: 15px;
 	width: 15px;
 	border-radius: 50%;
