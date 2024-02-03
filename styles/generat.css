@@ -6,9 +6,10 @@
 body {
 	font-family: Roboto, arial;
 	/*background-color: rgb(243, 243, 243);
-	background: linear-gradient(to right, rgb(248, 237, 255), rgb(240, 228, 252), rgb(238, 228, 255));*/
+	background: linear-gradient(to right, rgb(248, 237, 255), rgb(240, 228, 252), rgb(238, 228, 255));
 	background: url(../logo/Screenshot\ 2024-02-03\ 101028.png) no-repeat;
-	background-size: cover;
+	background-size: cover;*/
+	background: #23242a;
 	color:rgb(0, 0, 0) ;
 	margin: 0;
 	padding: 0;

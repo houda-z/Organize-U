@@ -5,14 +5,13 @@
 	position: relative;
 	height: 90px;
 	width: 100%;
-	margin-bottom: 30px;
+	margin-bottom: 50px;
 	background-color: transparent;
 }
 .logo-title-container {
 	width: auto;
 	display: flex;
 	flex-direction: row;
-	cursor: pointer;
 }
 .logo {
   width: 40px;
@@ -21,7 +20,7 @@
 	font-size: 28px;
 	display: inline;
 	font-family:roboto, arial; 
-	color: black;
+	color: rgb(255, 255, 255);
 	display: inline-block;
 	margin-left:10px;
 }
@@ -55,6 +54,7 @@
 	align-items: center;
 	justify-content: center;
 	cursor: pointer;
+	color: #ffffff;
 	margin-right: 15px;
 }
 .menu-icon-container:hover {
@@ -68,16 +68,17 @@
 	justify-content: space-between;
 	padding: 8px 10px;
 	width: 90px;
-	background-color: transparent;
-	backdrop-filter: blur(1px);
+	background: transparent;
 	border-radius: 20px;
 	cursor: pointer;
 	border: none ;
-	box-shadow:  2px 2px 5px rgb(120, 120, 120);
+}
+.creat-button svg{
+	color: #ffffff;
 }
 .creat-button-name {
 	font-family: roboto;
-	color:rgb(0, 0, 0);
+	color:rgb(255, 255, 255);
 	font-size: 15px ;
 }
 .creat-button:hover {
