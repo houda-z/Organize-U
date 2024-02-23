@@ -2,19 +2,71 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	padding: 9px;
 	position: relative;
-	height: 90px;
-	width: 100%;
-	margin-bottom: 50px;
-	background-color: transparent;
+	background-color: #23242a;
+	border-bottom: none 1px #32343a;
+	
+}
+@media ( max-width:870px)  {
+	.header{
+   margin-left: 0;
+	}
+}
+@media ( min-width:871px) and (max-width:999px){
+	.header{
+   margin-left: 65px;
+	}
+}
+@media ( min-width:1000px)  {
+	.header{
+   margin-left: 65px;
+	}
+}
+
+.update-header{
+	margin: 0px 0px 40px 20rem;
+}
+@keyframes margin-header {
+	from {
+   margin:0px 0px 40px 65px;
+	}
+	to {
+   margin: 0px 0px 40px 20rem;
+	}
+}
+@media ( max-width:870px)  {
+	.update-header{
+	 margin: 0px 0px 40px 0px;
+	}
+}
+@media ( min-width:871px) and (max-width:999px){
+	.update-header{
+	  margin: 0px 0px 40px 20rem;
+		animation: margin-header 0.5s ease-in-out;
+	}
+}
+@media ( min-width:1000px)  {
+	.update-header{
+	  margin: 0px 0px 40px 20rem;
+		animation: margin-header 0.5s ease-in-out;
+	}
+}
+.Menu-remove{
+	animation: Menu-remove 0.5s ease-in-out;
+}
+@keyframes Menu-remove {
+	from {
+   margin-left: 20rem;
+	}
+	to {
+  margin-left: 65px;
+	}
 }
 .logo-title-container {
 	width: auto;
 	display: flex;
 	flex-direction: row;
-}
-.logo {
-  width: 40px;
 }
 .page-name{
 	font-size: 28px;
@@ -22,30 +74,28 @@
 	font-family:roboto, arial; 
 	color: rgb(255, 255, 255);
 	display: inline-block;
-	margin-left:10px;
+	margin-left: 15px;
+	top: 20px;
 }
 @media ( max-width:870px) {
 	.page-name{
-	  font-size: 25px;
+	  font-size: 22px;
+		margin-left: 48px;
 	}
 }
 @media ( min-width:871px) and (max-width:999px) {
 	.page-name{
-		font-size: 25px;
+		font-size: 23px;
+		margin-left: 15px;
 	}
 }
  @media ( min-width:1000px) {
   .page-name{
-    font-size: 28px;
-  }
-  .logo{
-    width: 43px;
+    font-size: 23px;
+		margin-left: 15px;
   }
 }
-.add-todo-button svg path {
-	stroke: rgb(0, 0, 0);
-	fill: rgb(0, 0, 0);
-}
+
 .menu-icon-container {
 	height: 48px;
 	width: 48px;
@@ -55,44 +105,42 @@
 	justify-content: center;
 	cursor: pointer;
 	color: #ffffff;
-	margin-right: 15px;
+	margin: 12px 0px 0px 8px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 300;
 }
+.creat-button-container:hover,
 .menu-icon-container:hover {
-	box-shadow: 0px 2px 3px rgb(120, 120, 120);
-	transition: 0.5s;
+	box-shadow: 3px 3px 6px rgb(53, 53, 53);
+	transition: 0.7s;
 }
-.creat-button {
+.creat-button-container {
 	display: flex;
-	flex-direction: row;
 	align-items: center;
-	justify-content: space-between;
-	padding: 8px 10px;
-	width: 90px;
-	background: transparent;
-	border-radius: 20px;
-	cursor: pointer;
+	justify-content: center;
+	width: 53px;
+	height: 53px;
+	background: #23242a;
+	border-radius: 50px;
 	border: none ;
 }
-.creat-button svg{
-	color: #ffffff;
+.creat-button svg path {
+	stroke: transparent;
+	fill: white;
 }
-.creat-button-name {
-	font-family: roboto;
-	color:rgb(255, 255, 255);
-	font-size: 15px ;
+.creat-button{
+	background: transparent;
+	border: none;
+	height: 100%;
+	width: 100%;
+	cursor: pointer;
 }
-.creat-button:hover {
-	transition: 0.5s;
-	box-shadow: 2px 2px 5px rgb(147, 147, 147);
-}
-.creat-button:active {
+.creat-button:active{
   opacity: 0.7;
 }
-.creat-button-container {
-  margin-left: 20px;
-}
-.menu-icon,
-.creat-button-container {
+.menu-icon{
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -102,11 +150,11 @@
 	font-size: 14px;
 	position: absolute;
 	background-color:transparent;
-	color: rgb(0, 0, 0);
+	color: rgb(255, 255, 255);
 	border:none;
 	border-radius: 3px;
 	padding:6px 8px 6px 8px;
-	bottom: -20px;
+	bottom: -40px;
 	pointer-events: none;
 	opacity: 0;
 	white-space: nowrap;
@@ -114,5 +162,5 @@
 }
 .menu-icon-container:hover .menu-icon-title{
 	opacity: 1; 
-	transition: 0.5s;
+	transition: 0.7s;
 }

@@ -5,14 +5,14 @@ export const elements = [
 },
 {
  id: "schedule-tasks",
- name: "Schedule"
+ name: "Schedule",
 },
 {
  id: "delegate-tasks",
- name: "Delegate"
+ name: "Delegate",
 },
 {
  id: "eliminate-tasks",
- name: "Eliminate"
+ name: "Eliminate",
 }
 ]
