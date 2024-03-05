@@ -5,7 +5,6 @@ export function visualMenu() {
   const main = document.querySelector('.js-main');
   const sidebr = document.querySelector('.js-sidebr');
   const todoGrid = document.querySelector('.js-todo-grid');
-  console.log(sidebr)
 
   // Store the state of the menu for toggling:
   let isMenuOpen = false;
